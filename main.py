@@ -15,10 +15,11 @@ class TinderBot(commands.Bot):
 
 bot = TinderBot()
 
+OWNER_ID = #Your id here
 
 @commands.check
 async def is_me(ctx):
-    return(ctx.author.id == 360493765154045952)
+    return(ctx.author.id == OWNER_ID)
 
 
 @bot.command(description="Reloads a cog")
