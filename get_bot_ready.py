@@ -1,6 +1,11 @@
 import sqlite3
 import os
 
+try:
+    os.mkdir("db")
+except:
+    pass
+
 db = sqlite3.connect("db/bot.db")
 
 c = db.cursor()
